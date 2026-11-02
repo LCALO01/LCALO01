@@ -1,0 +1,6 @@
+{
+  "name": "Gestión Académica ISUJ",
+  "description": "Sistema de Gestión Académica ISUJ para la asignación y gestión eficiente de aulas por sede, bloque, piso, capacidad, disponibilidad, tipo de aula, asignatura, docente, horario, jornada, feriado y periodo académico con roles y reportes PDF, XLSX y CSV.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

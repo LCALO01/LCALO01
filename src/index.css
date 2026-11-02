@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* Touch and responsive improvements for all viewports (smartwatches, phones, tablets, PCs, smart TVs) */
+html, body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Custom slim scrollbar for tables and grids */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =========================================================
+   DIVISIÓN DE CAMPOS Y REGISTROS CON LÍNEAS VERTICALES
+   ========================================================= */
+table {
+  border-collapse: collapse;
+}
+
+/* Líneas verticales divisorias para encabezados (campos / th) */
+table th:not(:last-child) {
+  border-right: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* Encabezados oscuros (ej. tabla de 26 columnas) */
+thead.bg-slate-900 th:not(:last-child),
+tr.bg-slate-900 th:not(:last-child),
+th.bg-slate-900:not(:last-child) {
+  border-right: 1px solid #334155;
+}
+
+thead.bg-slate-800 th:not(:last-child),
+tr.bg-slate-800 th:not(:last-child),
+th.bg-slate-800:not(:last-child) {
+  border-right: 1px solid #475569;
+}
+
+/* Encabezados claros (catálogos maestros y reportes) */
+thead.bg-slate-100 th:not(:last-child),
+tr.bg-slate-100 th:not(:last-child),
+th.bg-slate-100:not(:last-child),
+thead.bg-slate-50 th:not(:last-child),
+tr.bg-slate-50 th:not(:last-child),
+th.bg-slate-50:not(:last-child) {
+  border-right: 1px solid #cbd5e1;
+}
+
+/* Líneas verticales divisorias para registros / celdas de datos (td) */
+table td:not(:last-child),
+table tbody td:not(:last-child) {
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Borde inferior suave para separación horizontal de registros */
+table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* =========================================================
+   TABLA DE PLANIFICACIÓN DE AULAS (SEMAFORIZACIÓN)
+   Líneas divisorias verticales y horizontales del mismo color gris
+   ========================================================= */
+table.table-planificacion-aulas {
+  border-collapse: collapse !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+table.table-planificacion-aulas th,
+table.table-planificacion-aulas td {
+  border-right: 1px solid #cbd5e1 !important; /* Mismo color y grosor que las líneas horizontales */
+  border-bottom: 1px solid #cbd5e1 !important; /* Líneas horizontales */
+}
+
+table.table-planificacion-aulas thead th {
+  border-bottom: 2px solid #cbd5e1 !important;
+}
+
+table.table-planificacion-aulas tfoot td {
+  border-top: 2px solid #cbd5e1 !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
